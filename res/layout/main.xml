@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/searchText"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.96"
+                android:hint="Search Official Docs" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:onClick="search"
+                android:text="Search" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right" >
+			
+			<RadioGroup android:id="@+id/radio_group"
+        		android:layout_height="wrap_content"
+        		android:layout_width="fill_parent"
+        		android:layout_alignParentBottom="true"
+        		android:orientation="horizontal"
+        		android:gravity="right" 
+        		>             
+	            <RadioButton
+	            android:id="@+id/radioButtonDev"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Dev" 
+	            android:textColor="@android:color/white"
+	            android:paddingRight="20dp"
+	            />
+	
+	            <RadioButton
+	            android:id="@+id/radioButtonItPro"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="ItPro" 
+	            android:textColor="@android:color/white"
+	            android:paddingRight="10dp"
+	            />
+	        </RadioGroup>
+        </LinearLayout>
+
+        
+
+    </LinearLayout>
